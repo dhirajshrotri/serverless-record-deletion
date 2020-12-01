@@ -1,0 +1,55 @@
+{
+    "compilerOptions": {
+      "preserveConstEnums": true,
+      "strictNullChecks": true,
+      "inlineSources": true,
+      "inlineSourceMap": true,
+      "sourceRoot": "/",
+      "target": "es2017",
+      "types": [
+        "node",
+      ],
+      "outDir": ".build",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "lib": [
+        "es2017",
+        "dom"
+      ],
+      "rootDir": "./src",
+      "resolveJsonModule": true,
+      "typeRoots": [
+        "./node_modules/@types",
+        "./src/@types"
+      ],
+      "importHelpers": true,
+      "watch": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "forceConsistentCasingInFileNames": true,
+      "incremental": false,
+      "noEmitOnError": true,
+      "baseUrl": "src",
+      "paths": {
+        "@cleaner/*": [
+          "modules/cleaner/*"
+        ],
+        "@utils/*": [
+          "shared/utils/*"
+        ],
+        "@infra/*": [
+          "shared/infra/*"
+        ],
+        "@lib/*": [
+          "shared/lib/*"
+        ],
+        "@config/*": [
+          "config/*"
+        ],
+      }
+    },
+    "exclude": [
+      "node_modules"
+    ]
+  }
